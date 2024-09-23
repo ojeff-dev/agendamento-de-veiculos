@@ -24,7 +24,7 @@ public class VehicleController {
     }
 
     // retorna todos os veículos, juntamente com informações do cliente
-    @GetMapping
+    @GetMapping()
     public ResponseEntity<List<VeiculoDTO>> getAllVehicles() {
         List<Veiculo> vehicles = vehicleService.getAllVehicles();
         List<VeiculoDTO> vehicleDTOs = vehicles.stream()
